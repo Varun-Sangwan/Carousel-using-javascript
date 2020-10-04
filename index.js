@@ -3,6 +3,8 @@ let pos = 0;
 const totalSlides = slides.length;
 console.log(totalSlides);
 
+setInterval(moveToNextSlide, 5000);
+
 function moveToNextSlide() {
   slides[pos].classList.remove("carousel-item-visible");
   console.log(totalSlides);
